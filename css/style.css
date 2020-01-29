@@ -2,6 +2,10 @@
 body, ul {
     margin: 0px;
     padding: 0px;
+<<<<<<< HEAD
+    font-family: 'Source Sans Pro', sans-serif;
+=======
+>>>>>>> eab8a153af352580dfbb19ba405bfe60e3c36867
 }
 #menu {
     text-transform: uppercase;
@@ -9,6 +13,47 @@ body, ul {
 
 #menu li {
     display: inline-block;
+<<<<<<< HEAD
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#menu li a {
+    color: #2d2d2d;
+}
+
+nav, header {
+    width: 100%;
+    height: 98px; 
+}
+
+header {
+    
+    box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+
+    position: fixed;
+    
+    margin: 0% auto;
+
+    left: 0;
+    right: 0;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: red;
+
+    display: flex;
+	justify-content: center;
+    flex-direction: column;
+    
+    background-color: #fff;
+    border-color: #eeeeee;
+
+    z-index: 3;
+=======
 }
 
 nav {
@@ -19,6 +64,7 @@ nav {
     padding-left: 15px;
     padding-right: 15px;
     background-color: red;
+>>>>>>> eab8a153af352580dfbb19ba405bfe60e3c36867
 }
 
 #logo {
@@ -27,12 +73,45 @@ nav {
 
 #menu {
     float: right;
+<<<<<<< HEAD
+}
 
+#banner {
+    width: 100%;
+    height: 475.063px;
+    text-align: center;
+    z-index: 0;
+=======
+
+>>>>>>> eab8a153af352580dfbb19ba405bfe60e3c36867
 }
 
 @media (min-width: 1200px) {
     nav {
         max-width: 1140px;
     }
+<<<<<<< HEAD
+    .mr-20 {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    li {
+        width: 100%;
+    }
+    header, nav {
+        height: 170px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    nav div {
+        text-align: center;
+    }
+    #logo {
+        float: none;
+    }
+=======
+>>>>>>> eab8a153af352580dfbb19ba405bfe60e3c36867
 }
 
