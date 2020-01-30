@@ -2,9 +2,26 @@
 body, ul {
     margin: 0px;
     padding: 0px;
+    color: #242424;
     font-family: 'Source Sans Pro', sans-serif;
 }
-#menu {
+/**/
+
+.container {
+    margin: 0% auto;
+
+    left: 0;
+    right: 0;
+    
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+#menu, #about h3, #patient-itens h3 {
     text-transform: uppercase;
 }
 
@@ -14,41 +31,28 @@ body, ul {
     font-weight: 400;
 }
 
-#menu li a {
-    color: #2d2d2d;
-}
-
 nav, header {
     width: 100%;
     height: 98px; 
 }
 
+nav, header {
+    position: fixed;
+    background-color: #fff;
+}
+
 header {
-    
     box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.2);
 }
 
 nav {
 
-    position: fixed;
-    
-    margin: 0% auto;
-
-    left: 0;
-    right: 0;
-
-    padding-left: 15px;
-    padding-right: 15px;
-    background-color: red;
-
     display: flex;
 	justify-content: center;
     flex-direction: column;
     
-    background-color: #fff;
     border-color: #eeeeee;
 
-    z-index: 3;
 }
 
 #logo {
@@ -62,12 +66,39 @@ nav {
 #banner {
     width: 100%;
     height: 475.063px;
+
+    background-color: #f0f0f0;
+
+    display: flex;
+	justify-content: center;
+    flex-direction: column;
+
+    padding-top: 98px;
+}
+
+#about h2 {
+    font-weight: 700;
+    font-size: 52px;
+}
+
+#abot-itens, #patient-itens {
     text-align: center;
-    z-index: 0;
+}
+
+.about-item {
+    width: 24%;
+    height: 267px;
+    display: inline-block;
+}
+
+.patient-item {
+    width: 33%;
+    height: 267px;
+    display: inline-block;
 }
 
 @media (min-width: 1200px) {
-    nav {
+    .container {
         max-width: 1140px;
     }
     .mr-20 {
@@ -75,20 +106,37 @@ nav {
     }
 }
 
+
+@media (min-width: 768px) and (max-width: 799px) {
+    #logo {
+        display: inherit;
+    }
+    #menu {
+        float: none;
+    }
+}
+
+
 @media (max-width: 800px) {
     li {
         width: 100%;
     }
     header, nav {
         height: 170px;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
     nav div {
         text-align: center;
     }
     #logo {
         float: none;
+    }
+    #banner {
+        padding-top: 170px;
+    }
+    .about-item, .patient-item {
+        width: 100%;
     }
 }
 
