@@ -1,9 +1,12 @@
 /*reset*/
-body, ul {
+body, ul, a {
     margin: 0px;
     padding: 0px;
     color: #242424;
     font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+    text-decoration: none;
 }
 /**/
 
@@ -21,7 +24,7 @@ h1, h2, h3 {
     text-align: center;
 }
 
-#menu, #about h3, #patient-itens h3 {
+#menu, #about h3, #abot-itens h4, #patient-itens h3, #partner-itens h3, #call-to-action-block h3, footer h4 {
     text-transform: uppercase;
 }
 
@@ -46,13 +49,11 @@ header {
 }
 
 nav {
-
     display: flex;
 	justify-content: center;
     flex-direction: column;
     
     border-color: #eeeeee;
-
 }
 
 #logo {
@@ -61,6 +62,10 @@ nav {
 
 #menu {
     float: right;
+}
+
+#menu li a:hover {
+    border-bottom: 2px solid #0d6556;
 }
 
 #banner {
@@ -81,20 +86,103 @@ nav {
     font-size: 52px;
 }
 
-#abot-itens, #patient-itens {
+#abot-itens h4 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+#abot-itens p {
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#patient-itens h3 {
+    display: inline-block;
+    border-bottom: 2px solid #0d6556;
+}
+
+#abot-itens, #patient-itens, #partner-itens {
     text-align: center;
 }
 
 .about-item {
-    width: 24%;
-    height: 267px;
-    display: inline-block;
+    width: 22.1%;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .patient-item {
     width: 33%;
+}
+
+.partner-item {
+    width: 15%;
+}
+
+#block-title {
+    width: 38.878%;
+}   
+
+.about-item, .patient-item, .partner-item, #block-title {
     height: 267px;
     display: inline-block;
+}
+
+#call-to-action-block a {
+    display: inline-block;
+    background: #009d83;
+    border: 2px solid #009d83;
+    padding: 20px 36px 20px 36px;
+    color: #fff;
+}
+
+#call-to-action-block {
+    text-align: center;
+    background-image: linear-gradient(to right,#fff , #009d8338);
+}
+
+.block {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#copy {
+    text-align: center;
+}
+
+#copy a {
+    display: inline-block;
+}
+
+#contact-list {
+    list-style: none;
+}
+
+footer .block {
+    display: inline-block;
+    text-align: left;
+    height: 162.531px;
+}
+
+#contact {
+    width: 48%;
+}
+
+#info {
+    width: 48%;
+}
+
+footer, footer ul, footer a {
+    color: #fff;
+}
+
+footer, footer ul {
+    background-color: #0a4f43;
+}
+
+#copy {
+    background-color: #0d6556;
 }
 
 @media (min-width: 1200px) {
@@ -123,6 +211,8 @@ nav {
     }
     header, nav {
         height: 170px;
+    }
+    header, nav, .about-item {
         padding-left: 0px !important;
         padding-right: 0px !important;
     }
@@ -135,8 +225,8 @@ nav {
     #banner {
         padding-top: 170px;
     }
-    .about-item, .patient-item {
-        width: 100%;
+    .about-item, .patient-item, .partner-item, #block-title, footer .block {
+        width: 100% !important;
     }
 }
 
