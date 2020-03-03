@@ -9,9 +9,9 @@ a {
 }
 /**/
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 body, ul, a {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -69,7 +69,7 @@ nav {
 }
 
 #menu li a:hover {
-    border-bottom: 2px solid #0d6556;
+    border-bottom: 2px solid #2F49C0;
 }
 
 #banner {
@@ -103,7 +103,12 @@ nav {
 
 #patient-itens h3 {
     display: inline-block;
-    border-bottom: 2px solid #0d6556;
+    border-bottom: 2px solid #2F49C0;
+}
+
+#partner-itens {
+    background-color: #2F49C0;
+    color: #fff;
 }
 
 #abot-itens, #patient-itens, #partner-itens {
@@ -121,7 +126,7 @@ nav {
 }
 
 .partner-item {
-    width: 15%;
+    width: 14.8%;
 }
 
 #block-title {
@@ -129,21 +134,19 @@ nav {
 }   
 
 .about-item, .patient-item, .partner-item, #block-title {
-    height: 267px;
     display: inline-block;
 }
 
 #call-to-action-block a {
     display: inline-block;
-    background: #009d83;
-    border: 2px solid #009d83;
+    background: #2D4AC0;
+    border: 2px solid #2D4AC0;
     padding: 20px 36px 20px 36px;
     color: #fff;
 }
 
 #call-to-action-block {
     text-align: center;
-    background-image: linear-gradient(to right,#fff , #009d8338);
 }
 
 .block {
@@ -182,11 +185,29 @@ footer, footer ul, footer a {
 }
 
 footer, footer ul {
-    background-color: #0a4f43;
+    background-color: #292A2C;
 }
 
 #copy {
-    background-color: #0d6556;
+    background-color: #171819;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#contact-list li i {
+    margin: 10px;
+}
+
+#contact-list li .expt {
+    margin-left: 0px;
+}
+
+#container-card {
+    padding-bottom: 30px;
+}
+
+#patient-itens {
+    padding-bottom: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -195,6 +216,11 @@ footer, footer ul {
     }
     .mr-20 {
         margin-right: 20px;
+    }
+    #menu {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%); 
     }
 }
 
@@ -231,6 +257,9 @@ footer, footer ul {
     }
     .about-item, .patient-item, .partner-item, #block-title, footer .block {
         width: 100% !important;
+    }
+    #menu {
+        margin-top: 5px;
     }
 }
 
