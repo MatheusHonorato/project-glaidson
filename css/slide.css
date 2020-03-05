@@ -1,0 +1,58 @@
+/* JS manipulated styles */
+
+.slide {
+    display: none;
+  }
+.slide, .frame {
+    height: 60px;
+}
+  
+.prev, .next {
+    height: 60px !important;
+    line-height: 110px;
+    white-space: nowrap;
+}
+  .slide.active {
+    display: inline-block;
+  }
+  
+  /* Appearance Styles */
+  
+  .slider {
+    margin: 0 auto;
+  }
+  
+  @media (min-width: 50rem) {
+    .slider {
+      margin: 0 auto;
+    }
+  }
+      
+.slide {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 3rem;
+    color: white;
+}
+  
+.prev, .next {
+    height: 2rem;
+    border: 0;
+}
+  
+.prev i, .next i {
+    position: relative;
+    top: -50%;
+    transform: translateY(50%);
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

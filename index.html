@@ -5,15 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
     <script src="https://use.fontawesome.com/60f53529f3.js"></script>
-    <title>project</title>
+    <title>Cartão Mais Solidariedade</title>
 </head>
 <body>
     <header>
         <nav class="container">
             <div>
                 <span id="logo">
-                    <img src="./img/logo-cartao-mais-solidariedade.png" width="100px">
+                    <a href="./"><img src="./img/logo-cartao-mais-solidariedade.png" width="100px"></a>
                 </span>
                 <ul id="menu">
                     <li>
@@ -72,10 +73,10 @@
             </div>
         </div>
     </div>
-    <div id="patient-itens" class="container">
-        <div class="block">
+    <div id="patient-itens">
+        <div class="block container">
             <div>
-                <h3>Conheça nossos beneficios</h3>
+                <h3>Conheça nossos benefícios</h3>
             </div>
             <div class="about-item">
                 <h4>ícone</h4>
@@ -103,18 +104,56 @@
         <div id="block-title">
             <h3>Nossos parceiros</h3>
         </div>
-        <div class="block container">
-            <div class="partner-item">
-                1
+        <div class="block h-60">
+            <div class="prev inline-block h-60">
+                <i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i>
             </div>
-            <div class="partner-item">
-                2
+            <div class="container inline-block">
+                <div class="slider">
+                    <div class="slides">
+                        <ul class="frame">
+                            <li class="slide active">
+                                <div class="partner-item">
+                                    <img src="./img/ponto-frio.png" height="60px">
+                                </div>
+                                <div class="partner-item">
+                                    <img src="./img/polishop.png" height="60px">
+                                </div>
+                                <div class="partner-item">
+                                    <img src="./img/centauro.png" height="60px">
+                                </div>
+                                <div class="partner-item">
+                                    <img src="./img/quem-disse-berenice.png" height="60px">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="partner-item">
+                                    <img src="./img/le-postiche.png" height="60px">
+                                </div>
+                                <div class="partner-item">
+                                    <img src="./img/voe-legal.png" height="60px">
+                                </div>
+                                <div class="partner-item">
+                                    <img src="./img/magazine-luiza.png" height="60px">
+                                </div>
+                                <div class="partner-item">
+                                    <img src="./img/casas-bahia.png" height="60px">
+                                </div>
+                            </li>
+                            <li class="slide">
+                                <div class="partner-item">
+                                    <img src="./img/sony.png" height="60px">
+                                </div>
+                                <div class="partner-item">
+                                    <img src="./img/hotel-urbano.png" height="60px">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="partner-item">
-                3
-            </div>
-            <div class="partner-item">
-                4
+            <div class="next inline-block">
+                <i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
             </div>
         </div>
     </div>
@@ -153,5 +192,6 @@
             <a href="https://matheushonorato.github.io">Desenvolvido por: matheushonorato</a>
         </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>

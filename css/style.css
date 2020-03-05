@@ -101,14 +101,16 @@ nav {
     font-weight: 300;
 }
 
-#patient-itens h3 {
-    display: inline-block;
-    border-bottom: 2px solid #2F49C0;
-}
 
-#partner-itens {
+#patient-itens {
     background-color: #2F49C0;
     color: #fff;
+}
+
+
+#patient-itens h3 {
+    display: inline-block;
+    border-bottom: 2px solid #fff;
 }
 
 #abot-itens, #patient-itens, #partner-itens {
@@ -123,10 +125,6 @@ nav {
 
 .patient-item {
     width: 33%;
-}
-
-.partner-item {
-    width: 14.8%;
 }
 
 #block-title {
@@ -210,6 +208,18 @@ footer, footer ul {
     padding-bottom: 30px;
 }
 
+.inline-block {
+    display: inline-block !important;
+}
+
+.partner-item {
+    height: 60px;
+}
+
+.h-60 {
+    height: 60px !important;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
@@ -233,7 +243,6 @@ footer, footer ul {
         float: none;
     }
 }
-
 
 @media (max-width: 800px) {
     li {
