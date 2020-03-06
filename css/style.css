@@ -14,6 +14,10 @@ body, ul, a {
     font-family: 'Poppins', sans-serif;
 }
 
+.mt-0 {
+    margin-top: 0 !important;
+}
+
 .container {
     margin: 0% auto;
 
@@ -36,6 +40,15 @@ h1, h2, h3 {
     display: inline-block;
     font-size: 15px;
     font-weight: 400;
+}
+
+section, footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+footer {
+    padding-bottom: 0px;
 }
 
 nav, header {
@@ -82,7 +95,8 @@ nav {
 	justify-content: center;
     flex-direction: column;
 
-    padding-top: 98px;
+    padding: 0px !important;
+    padding-top: 98px !important;
 }
 
 #about h2 {
@@ -106,7 +120,6 @@ nav {
     background-color: #2F49C0;
     color: #fff;
 }
-
 
 #patient-itens h3 {
     display: inline-block;
@@ -145,11 +158,12 @@ nav {
 
 #call-to-action-block {
     text-align: center;
+    background: #f0f0f0;
 }
 
 .block {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 #copy {
@@ -200,14 +214,6 @@ footer, footer ul {
     margin-left: 0px;
 }
 
-#container-card {
-    padding-bottom: 30px;
-}
-
-#patient-itens {
-    padding-bottom: 30px;
-}
-
 .inline-block {
     display: inline-block !important;
 }
@@ -218,6 +224,10 @@ footer, footer ul {
 
 .h-60 {
     height: 60px !important;
+}
+
+.prev, .next {
+    cursor: pointer;
 }
 
 @media (min-width: 1200px) {
