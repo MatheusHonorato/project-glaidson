@@ -29,16 +29,20 @@ const nav = document.querySelector('#header');
 function checkPosition() {
   let windowY = window.scrollY;
   var div_menu = document.querySelector("#div-menu");
+  var display_value = document.querySelector("#menu");
   
   if (windowY == 0) {
     nav.style.background = "transparent";
     nav.style.boxShadow = "none";
     div_menu.style.background = "transparent";
+    display_value.style.backgroundColor = "#F0F0F0";
 
   } else {
     nav.style.background = "#FFF";
     nav.style.boxShadow = "0px 2px 9px rgba(0, 0, 0, 0.2)";
     div_menu.style.background = "#FFF";
+    display_value.style.backgroundColor = "#FFF";
+
   }
 }
 
@@ -50,9 +54,11 @@ icon_menu.addEventListener('click', function () {
   if(display_value.style.display == "" || display_value.style.display == "block") {
     display_value.style.display = "none";
     div_menu.style.marginTop = "0px";
+    div_menu.style.backgroundColor = "transparent";
   } else {
     display_value.style.display = "block";
     div_menu.style.marginTop = "140px";
+    div_menu.style.backgroundColor = "#FFF";
   }
 
 });
