@@ -307,6 +307,9 @@ footer, footer ul {
     #menu {
         float: none;
     }
+    #icon-menu {
+        top: 30px;
+    }
 }
 
 @media (max-width: 800px) {

@@ -42,11 +42,15 @@ window.addEventListener('scroll', checkPosition);
 
 icon_menu.addEventListener('click', function () {
   var display_value = document.querySelector("#menu");
+  var div_menu = document.querySelector("#div-menu");
   if(display_value.style.display == "" || display_value.style.display == "block") {
     display_value.style.display = "none";
+    div_menu.style.marginTop = "0px";
   } else {
     display_value.style.display = "block";
+    div_menu.style.marginTop = "140px";
   }
+
 });
 
 
