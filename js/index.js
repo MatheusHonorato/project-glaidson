@@ -28,13 +28,17 @@ const nav = document.querySelector('#header');
 
 function checkPosition() {
   let windowY = window.scrollY;
+  var div_menu = document.querySelector("#div-menu");
   
   if (windowY == 0) {
     nav.style.background = "transparent";
     nav.style.boxShadow = "none";
+    div_menu.style.background = "transparent";
+
   } else {
     nav.style.background = "#FFF";
     nav.style.boxShadow = "0px 2px 9px rgba(0, 0, 0, 0.2)";
+    div_menu.style.background = "#FFF";
   }
 }
 

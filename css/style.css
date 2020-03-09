@@ -368,5 +368,8 @@ footer, footer ul {
         position: fixed;
         right: 30px;
     }
+    #div-menu {
+        background: #fff;
+    }
 }
 
