@@ -278,7 +278,11 @@ footer, footer ul {
 }
 
 .text-left {
-    text-align: left  !important;
+    text-align: left;
+}
+
+#icon-menu {
+    display: none;
 }
 
 @media (min-width: 1200px) {
@@ -315,6 +319,9 @@ footer, footer ul {
     header, nav, .about-item {
         padding-left: 0px !important;
         padding-right: 0px !important;
+        padding-top: 10px !important;
+        padding-bottom: 20px !important;
+        height: 50px;
     }
     nav div {
         text-align: center;
@@ -323,13 +330,40 @@ footer, footer ul {
         float: none;
     }
     #banner {
-        padding-top: 170px;
+        padding-top: 170px !important;
     }
     .about-item, .patient-item, .partner-item, #block-title, footer .block {
         width: 100% !important;
     }
     #menu {
         margin-top: 5px;
+    }
+    #banner .container {
+        display: block;
+    }
+    #family_img, #card_img, #text-banner {
+        width: 100%;
+    }
+    h1, #text-banner p {
+        text-align: center !important;
+    }
+    h1 {
+        margin-top: 100px;
+        font-size: 54px;
+    }
+    #div-banner {
+        text-align: center;
+    }
+    #family_img {
+        margin-top: 100px;
+    }
+    #menu {
+        display: none;
+    }
+    #icon-menu {
+        display: inline-block;
+        position: fixed;
+        right: 30px;
     }
 }
 

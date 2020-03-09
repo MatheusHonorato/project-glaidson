@@ -1,6 +1,8 @@
 var previous = document.querySelector(".prev");
 var next = document.querySelector(".next");
 var slides = document.getElementsByClassName("slide");
+var icon_menu = document.querySelector("#icon-menu");
+
 var current = 0;
 
 // Code that moves to the next slide
@@ -26,7 +28,7 @@ const nav = document.querySelector('#header');
 
 function checkPosition() {
   let windowY = window.scrollY;
-  console.log(windowY);
+  
   if (windowY == 0) {
     nav.style.background = "transparent";
     nav.style.boxShadow = "none";
@@ -37,4 +39,15 @@ function checkPosition() {
 }
 
 window.addEventListener('scroll', checkPosition);
+
+icon_menu.addEventListener('click', function () {
+  var display_value = document.querySelector("#menu");
+  if(display_value.style.display == "" || display_value.style.display == "block") {
+    display_value.style.display = "none";
+  } else {
+    display_value.style.display = "block";
+  }
+});
+
+
 
