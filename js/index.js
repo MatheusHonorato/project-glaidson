@@ -21,3 +21,20 @@ previous.addEventListener("click", function () {
   slides[current].classList.add("active");
 });
 
+let scrollPos = 0;
+const nav = document.querySelector('#header');
+
+function checkPosition() {
+  let windowY = window.scrollY;
+  console.log(windowY);
+  if (windowY == 0) {
+    nav.style.background = "transparent";
+    nav.style.boxShadow = "none";
+  } else {
+    nav.style.background = "#FFF";
+    nav.style.boxShadow = "0px 2px 9px rgba(0, 0, 0, 0.2)";
+  }
+}
+
+window.addEventListener('scroll', checkPosition);
+

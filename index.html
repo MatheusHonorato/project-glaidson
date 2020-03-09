@@ -10,7 +10,7 @@
     <title>Cartão Mais Solidariedade</title>
 </head>
 <body>
-    <header>
+    <header id="header" onscroll="alterBackground()">
         <nav class="container">
             <div>
                 <span id="logo">
@@ -40,8 +40,14 @@
         </nav>
     </header>
     <section id="banner">
-        <div class="block text-center">
-            <img id="family_img" src="./img/Familia.png" width="300px">
+        <div class="container block">
+            <div id="text-banner">
+                <h1 class="text-left">Cartão Mais Solidariede</h1>
+                <p class="text-left">Tenha diversos beneficios em um so cartão</p>
+                <a href="#" id="btn-banner" class="btn">Assine agora</a>
+            </div>
+            <img id="family_img" src="./img/Familia.png">
+            <img id="card_img" src="./img/card.png">
         </div>
     </section>
     <section id="about">
@@ -79,22 +85,32 @@
                 <h3>Conheça nossos benefícios</h3>
             </div>
             <div class="about-item">
-                <h4>ícone</h4>
+                <i class="fa fa-cart-plus fa-4x" aria-hidden="true"></i>
                 <h4>Lorem</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est alias, dolorem quis molestias aut numquam magni accusamus odio natus, ab adipisci, expedita corrupti dignissimos soluta iure labore non architecto nostrum.</p>
             </div>
             <div class="about-item">
-                <h4>ícone</h4>
+                <i class="fa fa-paper-plane fa-4x" aria-hidden="true"></i>
                 <h4>Lorem</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est alias, dolorem quis molestias aut numquam magni accusamus odio natus, ab adipisci, expedita corrupti dignissimos soluta iure labore non architecto nostrum.</p>
             </div>
             <div class="about-item">
-                <h4>ícone</h4>
+                <i class="fa fa-user-md fa-4x" aria-hidden="true"></i>
                 <h4>Lorem</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est alias, dolorem quis molestias aut numquam magni accusamus odio natus, ab adipisci, expedita corrupti dignissimos soluta iure labore non architecto nostrum.</p>
             </div>
             <div class="about-item">
-                <h4>ícone</h4>
+                <i class="fa fa-thumbs-o-up fa-4x" aria-hidden="true"></i>
+                <h4>Lorem</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est alias, dolorem quis molestias aut numquam magni accusamus odio natus, ab adipisci, expedita corrupti dignissimos soluta iure labore non architecto nostrum.</p>
+            </div>
+            <div class="about-item">
+                <i class="fa fa-plus-square fa-4x" aria-hidden="true"></i>
+                <h4>Lorem</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est alias, dolorem quis molestias aut numquam magni accusamus odio natus, ab adipisci, expedita corrupti dignissimos soluta iure labore non architecto nostrum.</p>
+            </div>
+            <div class="about-item">
+                <i class="fa fa-heartbeat fa-4x" aria-hidden="true"></i>
                 <h4>Lorem</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est alias, dolorem quis molestias aut numquam magni accusamus odio natus, ab adipisci, expedita corrupti dignissimos soluta iure labore non architecto nostrum.</p>
             </div>
@@ -162,7 +178,7 @@
             <div id="container-card" class="block">
                 <h3 class="mt-0">Peça já o seu cartão</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et nulla, molestias odit accusamus eveniet ipsum iure dicta eum, reiciendis ducimus dolores assumenda beatae cupiditate non maxime voluptate. Enim, nulla modi.</p>
-                <a href="#">Clique aqui</a>
+                <a href="#" id="btn-call" class="btn">Clique aqui</a>
             </div>
         </div>
     </section>
