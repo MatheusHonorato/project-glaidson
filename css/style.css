@@ -285,6 +285,10 @@ footer, footer ul {
     display: none;
 }
 
+#card_img_mob {
+    display: none;
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
@@ -333,7 +337,7 @@ footer, footer ul {
         float: none;
     }
     #banner {
-        padding-top: 170px !important;
+        padding-top: 130px !important;
     }
     .about-item, .patient-item, .partner-item, #block-title, footer .block {
         width: 100% !important;
@@ -344,6 +348,9 @@ footer, footer ul {
     #banner .container {
         display: block;
     }
+    #family_img {
+        margin-top: 100px;
+    }
     #family_img, #card_img, #text-banner {
         width: 100%;
     }
@@ -351,14 +358,14 @@ footer, footer ul {
         text-align: center !important;
     }
     h1 {
-        margin-top: 100px;
+        margin-top: 40px;
         font-size: 54px;
     }
     #div-banner {
         text-align: center;
     }
-    #family_img {
-        margin-top: 100px;
+    #card_img {
+        display: none;
     }
     #menu {
         display: none;
@@ -370,6 +377,10 @@ footer, footer ul {
     }
     #div-menu {
         background: #fff;
+    }
+    #card_img_mob {
+        display: inline-block;
+        text-align: center;
     }
 }
 
