@@ -35,14 +35,15 @@ function checkPosition() {
     nav.style.background = "transparent";
     nav.style.boxShadow = "none";
     div_menu.style.background = "transparent";
-    display_value.style.backgroundColor = "#2F49C0";
-
+    display_value.style.background = "#2F49C0";
+    if(screen.width > 1024) {
+      display_value.style.background = "transparent";
+    }
   } else {
     nav.style.background = "#2F49C0";
     nav.style.boxShadow = "0px 2px 9px rgba(0, 0, 0, 0.2)";
     div_menu.style.background = "#2F49C0";
     display_value.style.backgroundColor = "#2F49C0";
-
   }
 }
 
@@ -51,11 +52,18 @@ window.addEventListener('scroll', checkPosition);
 icon_menu.addEventListener('click', function () {
   var display_value = document.querySelector("#menu");
   var div_menu = document.querySelector("#div-menu");
+  let windowY = window.scrollY;
+
   if(display_value.style.display == "" || display_value.style.display == "block") {
     display_value.style.display = "none";
     div_menu.style.marginTop = "0px";
     div_menu.style.backgroundColor = "transparent";
   } else {
+    if (windowY == 0) {
+      display_value.style.background = "linear-gradient(90deg, rgba(47,73,192,1) 0%, rgba(70,99,230,1) 46%, rgba(70,99,230,1) 50%, rgba(70,99,230,1) 54%, rgba(47,73,192,1) 100%)";
+    } else {
+      display_value.style.background = "#2F49C0";
+    }
     display_value.style.display = "block";
     div_menu.style.marginTop = "140px";
     div_menu.style.backgroundColor = "#FFF";

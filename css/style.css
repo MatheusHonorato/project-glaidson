@@ -124,7 +124,7 @@ nav {
     width: 100%;
     
     background: linear-gradient(90deg, rgba(47,73,192,1) 0%, rgba(70,99,230,1) 46%, rgba(70,99,230,1) 50%, rgba(70,99,230,1) 54%, rgba(47,73,192,1) 100%);
-    
+
     display: flex;
 	justify-content: center;
     flex-direction: column;
@@ -366,7 +366,6 @@ footer, footer ul {
     }
     #menu {
         margin-top: 5px;
-        background-color: #2F49C0;
     }
     #banner .container {
         display: block;
