@@ -64,4 +64,17 @@ icon_menu.addEventListener('click', function () {
 });
 
 
+function getResolution() {
+    if(screen.width > 1024) {
+    var element = document.querySelector("#slide-mob");
+  } else {
+    var element = document.querySelector("#slide-desktop");
+  }
+  element.parentNode.removeChild(element);
+}
+
+getResolution();
+
+
+
 

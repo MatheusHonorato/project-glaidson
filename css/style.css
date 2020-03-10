@@ -354,13 +354,13 @@ footer, footer ul {
         display: block;
     }
     #family_img {
-        margin-top: 55px;
+        margin-top: 100px;
     }
     #family_img, #card_img, #text-banner {
         width: 100%;
     }
     #text-banner p {
-        margin-bottom: 50px;
+        margin-bottom: 90px;
     }
     h1, #text-banner p {
         text-align: center !important;
