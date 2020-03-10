@@ -35,13 +35,13 @@ function checkPosition() {
     nav.style.background = "transparent";
     nav.style.boxShadow = "none";
     div_menu.style.background = "transparent";
-    display_value.style.backgroundColor = "#F0F0F0";
+    display_value.style.backgroundColor = "#2F49C0";
 
   } else {
-    nav.style.background = "#FFF";
+    nav.style.background = "#2F49C0";
     nav.style.boxShadow = "0px 2px 9px rgba(0, 0, 0, 0.2)";
-    div_menu.style.background = "#FFF";
-    display_value.style.backgroundColor = "#FFF";
+    div_menu.style.background = "#2F49C0";
+    display_value.style.backgroundColor = "#2F49C0";
 
   }
 }
