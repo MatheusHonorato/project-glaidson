@@ -123,8 +123,8 @@ nav {
 #banner {
     width: 100%;
     
-    background-color: #2F49C0;
-
+    background: linear-gradient(90deg, rgba(47,73,192,1) 0%, rgba(70,99,230,1) 46%, rgba(70,99,230,1) 50%, rgba(70,99,230,1) 54%, rgba(47,73,192,1) 100%);
+    
     display: flex;
 	justify-content: center;
     flex-direction: column;
@@ -246,12 +246,17 @@ footer, footer ul {
     padding-bottom: 5px;
 }
 
-#contact-list li i {
-    margin: 10px;
+#contact-list {
+    text-align: center;
 }
 
-#contact-list li .expt {
-    margin-left: 0px;
+#contact-list div a  {
+    color: #FFF;
+}
+
+#contact-list div {
+    display: inline-block;
+    width: 32.33%;
 }
 
 .inline-block {
@@ -296,6 +301,10 @@ footer, footer ul {
 
 #menu li a {
     color: #FFF;
+}
+
+#contact-block {
+    background-color: #2D4AC0;
 }
 
 @media (min-width: 1200px) {
@@ -398,6 +407,9 @@ footer, footer ul {
     #card_img_mob {
         display: inline-block;
         text-align: center;
+    }
+    #contact-list div {
+        width: 100%;
     }
 }
 
