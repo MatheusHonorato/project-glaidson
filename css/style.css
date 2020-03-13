@@ -57,6 +57,10 @@ h1 {
     margin-top: 0 !important;
 }
 
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
 .pb-30 {
     padding-bottom: 30px;
 }
