@@ -144,6 +144,14 @@ nav {
     font-size: 52px;
 }
 
+#abot-itens div {
+    vertical-align: top;
+}
+
+#abot-itens ul {
+    list-style: none;
+}
+
 #abot-itens h4 {
     font-size: 18px;
     font-weight: 400;
@@ -216,6 +224,10 @@ nav {
 
 #contact-list {
     list-style: none;
+}
+
+#contact-list div {
+    vertical-align: top;
 }
 
 footer .block {
@@ -409,6 +421,9 @@ footer, footer ul {
     }
     #contact-list div {
         width: 100%;
+    }
+    #abot-itens div {
+        vertical-align: inherit;
     }
 }
 
