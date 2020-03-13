@@ -57,6 +57,10 @@ h1 {
     margin-top: 0 !important;
 }
 
+.pb-30 {
+    padding-bottom: 30px;
+}
+
 .container {
     margin: 0% auto;
 
@@ -144,7 +148,7 @@ nav {
     font-size: 52px;
 }
 
-#abot-itens div {
+#abot-itens div, #patient-itens div {
     vertical-align: top;
 }
 
@@ -422,7 +426,7 @@ footer, footer ul {
     #contact-list div {
         width: 100%;
     }
-    #abot-itens div {
+    #abot-itens div, #patient-itens div {
         vertical-align: inherit;
     }
 }
