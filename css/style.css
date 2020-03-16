@@ -79,7 +79,7 @@ h1, h2, h3 {
     text-align: center;
 }
 
-#menu, #about h3, #abot-itens h4, #patient-itens h3, #partner-itens h3, #call-to-action-block h3, footer h4 {
+#menu, #about h3, #about-itens h4, #patient-itens h3, #partner-itens h3, #call-to-action-block h3, footer h4 {
     text-transform: uppercase;
 }
 
@@ -152,21 +152,21 @@ nav {
     font-size: 52px;
 }
 
-#abot-itens div, #patient-itens div {
+#about-itens div, #patient-itens div {
     vertical-align: top;
 }
 
-#abot-itens ul {
+#about-itens ul {
     list-style: none;
 }
 
-#abot-itens h4 {
+#about-itens h4 {
     font-size: 18px;
     font-weight: 400;
 }
 
 
-#abot-itens p {
+#about-itens p {
     font-size: 13px;
     font-weight: 300;
 }
@@ -182,7 +182,7 @@ nav {
     border-bottom: 2px solid #fff;
 }
 
-#abot-itens, #patient-itens, #partner-itens {
+#about-itens, #patient-itens, #partner-itens {
     text-align: center;
 }
 
@@ -192,15 +192,14 @@ nav {
     padding-right: 15px;
 }
 
-#abot-itens .about-item {
+#about-itens .about-item {
     background: #74C15C;
     color: #fff;
     padding: 15px;
-    min-height: 343.875px;
     margin: 10px;
 }
 
-#abot-itens .about-item ul li {
+#about-itens .about-item ul li {
     color: #fff;
 }
 
@@ -339,6 +338,12 @@ footer, footer ul {
     background-color: #2D4AC0;
 }
 
+@media (min-width: 900px) {
+    #about-itens .about-item {
+        min-height: 343.875px;
+    }
+}
+
 @media (min-width: 1200px) {
     .container {
         max-width: 1140px;
@@ -376,12 +381,14 @@ footer, footer ul {
     #div-menu {
         background-color: transparent !important;
     }
+    header, nav, nav .about-item {
+        height: 50px;
+    }
     header, nav, .about-item {
         padding-left: 0px !important;
         padding-right: 0px !important;
         padding-top: 10px !important;
         padding-bottom: 20px !important;
-        height: 50px;
     }
 
     nav div {
@@ -442,10 +449,10 @@ footer, footer ul {
     #contact-list div {
         width: 100%;
     }
-    #abot-itens div, #patient-itens div {
+    #about-itens div, #patient-itens div {
         vertical-align: inherit;
     }
-    #abot-itens .about-item {
+    #about-itens .about-item {
         margin: 0px;
         margin-bottom: 30px;
     }
