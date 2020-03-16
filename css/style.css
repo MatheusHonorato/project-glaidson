@@ -192,6 +192,18 @@ nav {
     padding-right: 15px;
 }
 
+#abot-itens .about-item {
+    background: #74C15C;
+    color: #fff;
+    padding: 15px;
+    min-height: 343.875px;
+    margin: 10px;
+}
+
+#abot-itens .about-item ul li {
+    color: #fff;
+}
+
 .patient-item {
     width: 33%;
 }
@@ -432,6 +444,10 @@ footer, footer ul {
     }
     #abot-itens div, #patient-itens div {
         vertical-align: inherit;
+    }
+    #abot-itens .about-item {
+        margin: 0px;
+        margin-bottom: 30px;
     }
 }
 
