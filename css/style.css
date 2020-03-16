@@ -456,5 +456,8 @@ footer, footer ul {
         margin: 0px;
         margin-bottom: 30px;
     }
+    #about-itens .about-item ul {
+        padding: 35px;
+    }
 }
 
