@@ -1,4 +1,7 @@
 /*reset*/
+body {
+    background-color: #f2fafd;
+}
 body, ul, a {
     margin: 0px;
     padding: 0px;
@@ -98,6 +101,10 @@ footer {
     padding-bottom: 0px;
 }
 
+header {
+    border-bottom: 1px solid hsla(0, 0%, 100%, 0.25);
+}
+
 nav, header {
     width: 100%;
     height: 98px; 
@@ -138,7 +145,7 @@ nav {
     flex-direction: column;
 
     padding: 0px !important;
-    padding-top: 98px !important;
+    padding-top: 110px !important;
 }
 
 #banner .block {
@@ -147,9 +154,9 @@ nav {
   justify-content: center;
 }
 
-#about h2 {
+h2 {
     font-weight: 700;
-    font-size: 52px;
+    font-size: 42px;
 }
 
 #about-itens div, #patient-itens div {
@@ -301,7 +308,8 @@ footer, footer ul {
 }
 
 .partner-item {
-    height: 60px;
+    min-width: 211.047px;
+    /*height: 60px;*/
 }
 
 .h-60 {
@@ -344,9 +352,13 @@ footer, footer ul {
     background-color: #2D4AC0;
 }
 
+#icon-menu {
+    cursor: pointer;
+}
+
 @media (min-width: 900px) {
     #about-itens .about-item {
-        min-height: 467.750px;
+        min-height: 536px;
     }
 }
 

@@ -2,6 +2,7 @@ var previous = document.querySelector(".prev");
 var next = document.querySelector(".next");
 var slides = document.getElementsByClassName("slide");
 var icon_menu = document.querySelector("#icon-menu");
+var header = document.querySelector("header");
 
 var current = 0;
 
@@ -36,6 +37,7 @@ function checkPosition() {
     nav.style.boxShadow = "none";
     div_menu.style.background = "transparent";
     display_value.style.background = "#2F49C0";
+    header.style.borderBottom = "1px solid hsla(0, 0%, 100%, 0.25)";
     if(screen.width > 1024) {
       display_value.style.background = "transparent";
     }
@@ -44,6 +46,7 @@ function checkPosition() {
     nav.style.boxShadow = "0px 2px 9px rgba(0, 0, 0, 0.2)";
     div_menu.style.background = "#2F49C0";
     display_value.style.backgroundColor = "#2F49C0";
+    header.style.border = "0px";
   }
 }
 
